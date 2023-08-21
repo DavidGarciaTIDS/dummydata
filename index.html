@@ -13,7 +13,6 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" href="style.css">
-		<script src="data.js"></script>
 	</head>
 
 	<body>
@@ -28,16 +27,16 @@
 
 			<div class="row">
 				<div class="d-flex flex-row mb-3">
-					<button class="p-2 me-2 btn btn-primary" onclick="generar_alumnos()">
+					<button id="genAlumnos" class="p-2 me-2 btn btn-primary" onclick="generar_alumnos()">
 						Generar Alumnos
 					</button>
-					<button class="p-2 me-2 btn btn-info" onclick="generarSql()">
+					<button id="genSQL" class="p-2 me-2 btn btn-info" onclick="generarSql()">
 						Generar SQL
 					</button>
-					<button class="p-2 me-2 btn btn-warning" onclick="generarCSV();">
+					<button id="genCSV" class="p-2 me-2 btn btn-warning" onclick="generarCSV();">
 						Generar CSV
 					</button>
-					<button class="p-2 me-2 btn btn-secondary" onclick="exportar();">
+					<button id="export" class="p-2 me-2 btn btn-secondary" onclick="exportar();">
 						Exportar
 					</button>
 				</div>
@@ -46,5 +45,6 @@
 		<div class="container-fluid">
 			<p id="alumnosP"></p>
 		</div>
+		<script src="data.js"></script>
 	</body>
 </html>
